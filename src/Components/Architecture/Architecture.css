@@ -1,0 +1,13 @@
+.architecture_img_hover:hover {
+  cursor: pointer;
+  transition: all 0.5s linear;
+  filter: brightness(50%);
+  .architecture_img_plus {
+    opacity: 1;
+    z-index: 50;
+  }
+  .architecture_img_plus:hover {
+    transition: all 0.5s linear;
+    rotate: 90deg;
+  }
+}

@@ -1,0 +1,54 @@
+.About_company {
+  height: 80vh;
+}
+
+.Virtical_line1 {
+  height: 100vh;
+  width: 1px;
+  /* border: 0.5px solid #918c89; */
+  background-color: #918c89;
+}
+
+.button_about {
+  margin-top: 5vh;
+  height: 5.5vh;
+  width: 9vw;
+  background-color: black;
+  color: aliceblue;
+  font-size: 1vw;
+}
+.button_lines {
+  width: 0.1px;
+  height: 5.5vh;
+  border: 0.5px solid black;
+  left: 9.5vw;
+  bottom: 3.5vh;
+}
+.button_lines2 {
+  width: 9vw;
+  height: 1px;
+  border: 1px solid black;
+  left: 1vw;
+  bottom: 4.5vh;
+}
+
+.button_hover:hover {
+  .button_about {
+    transition: all 0.3s linear;
+    border: 1px solid black;
+    background: white;
+    color: black;
+  }
+  .button_lines {
+    transition: all 0.3s linear;
+    transform: translateY(0vh);
+    height: 0vh;
+    border: none;
+  }
+  .button_lines2 {
+    transition: all 0.3s linear;
+    transform: translateY(0vh);
+    height: 0vh;
+    border: none;
+  }
+}

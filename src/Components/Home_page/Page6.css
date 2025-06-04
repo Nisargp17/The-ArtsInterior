@@ -1,0 +1,9 @@
+.Get_in_touch {
+  background-image: url(/src/assets/bg1-home1.jpg);
+}
+.Get_in_touch_button:hover {
+  transition: all 0.3s linear;
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid white;
+}

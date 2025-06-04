@@ -1,0 +1,9 @@
+.virticalLines {
+  height: 10000000vh;
+  width: 1px;
+  background-color: #918c89;
+}
+.we_offers:hover {
+  filter: invert(100%);
+  transition: all 0.5s linear;
+}

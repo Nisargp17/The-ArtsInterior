@@ -1,0 +1,5 @@
+.about_background_img {
+  background-image: url("/src/assets/pheader-aboutus.jpg");
+  height: 50vh;
+  filter: brightness(60%);
+}

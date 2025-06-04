@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+.pro_img1:hover {
+  transition: all 0.5s linear;
+  .hidden_text {
+    transition: all 0.5s linear;
+    opacity: 1;
+    transform: translateY(-19vh);
+  }
+  .hidden_text > :nth-child(1):hover {
+    transition: all 0.5s linear;
+    text-decoration: underline 2px;
+  }
+}
+.pro_img2:hover {
+  transition: all 0.5s linear;
+  .hidden_text {
+    transition: all 0.5s linear;
+    opacity: 1;
+    transform: translateY(-19vh);
+  }
+  .hidden_text > :nth-child(1):hover {
+    transition: all 0.5s linear;
+    text-decoration: underline 2px;
+  }
+}
+.pro_img3:hover {
+  transition: all 0.5s linea5r;
+  .hidden_text {
+    transition: all 0.5s linear;
+    opacity: 1;
+    transform: translateY(-19vh);
+  }
+  .hidden_text > :nth-child(1):hover {
+    transition: all 0.5s linear;
+    text-decoration: underline 2px;
+  }
+}
+.pro_img4:hover {
+  transition: all 0.5s linear;
+  .hidden_text {
+    transition: all 0.5s linear;
+    opacity: 1;
+    transform: translateY(-19vh);
+  }
+  .hidden_text > :nth-child(1):hover {
+    transition: all 0.5s linear;
+    text-decoration: underline 2px;
+  }
+}
+.pro_img5:hover {
+  transition: all 0.5s linear;
+  .hidden_text {
+    transition: all 0.5s linear;
+    opacity: 1;
+    transform: translateY(-19vh);
+  }
+  .hidden_text > :nth-child(1):hover {
+    transition: all 0.5s linear;
+    text-decoration: underline 2px;
+  }
+}
+.pro_img6:hover {
+  transition: all 0.5s linear;
+  .hidden_text {
+    transition: all 0.5s linear;
+    opacity: 1;
+    transform: translateY(-19vh);
+  }
+  .hidden_text > :nth-child(1):hover {
+    transition: all 0.5s linear;
+    text-decoration: underline 2px;
+  }
+}

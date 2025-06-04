@@ -1,0 +1,5 @@
+.features_hover:hover {
+  transition: all 0.5s linear;
+  filter: brightness(200%);
+  cursor: pointer;
+}

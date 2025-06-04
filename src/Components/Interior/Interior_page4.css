@@ -1,0 +1,9 @@
+.projext_hover:hover {
+  transition: all 0.3s linear;
+  filter: brightness(50%);
+  cursor: pointer;
+  background: transparent;
+  .show_text_projects {
+    opacity: 1;
+  }
+}

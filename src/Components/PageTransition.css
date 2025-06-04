@@ -1,0 +1,17 @@
+.page-fade-transition {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  animation: fadeOut 0.7s ease forwards;
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

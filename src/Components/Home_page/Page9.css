@@ -1,0 +1,14 @@
+.view_all:hover {
+  transition: all 0.5s linear;
+  border: 1px solid white;
+  filter: invert(100%);
+}
+.blog_articles:hover {
+  transition: all 0.5s linear;
+  border: 1px solid black;
+}
+.page8_vertical_line {
+  width: 1px;
+  height: 100vh;
+  background-color: #918c89;
+}

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+.Home_page {
+  height: 100vh;
+  overflow-x: hidden;
+  /* background-image: url("src/assets/slider2-home1-1.jpg"); */
+}
+.hero_image {
+  height: 100vh;
+}
+.bg_text {
+  font-weight: 900;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hero_title {
+  color: rgb(240, 248, 255);
+  font-size: 6rem;
+  font-weight: 100;
+}
+.hero_text {
+  color: rgb(240, 248, 255);
+  font-size: 1.3rem;
+}
+.button_main {
+  background-color: black;
+  color: white;
+  height: 3rem;
+  width: 10rem;
+}
+.button_main:hover {
+  background-color: aliceblue;
+  color: black;
+}
+.Horizontal_line {
+  width: 100vw;
+  height: 1px;
+  background-color: #918c89;
+  /* border-top: 1px solid #918c89; */
+}
+.Virtical_line {
+  height: 100vh;
+  width: 1px;
+  background-color: #918c89;
+  /* border: 1px solid #918c89; */
+}

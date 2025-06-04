@@ -1,0 +1,17 @@
+.project_text_hover:hover {
+  transition: all 0.2s linear;
+  text-decoration: underline;
+  color: rgb(68, 70, 71);
+  cursor: pointer;
+  font-size: 2.6vw;
+}
+.exterior_scroll_background {
+  background-image: url("/src/assets/Exterior8.jpg");
+  background-attachment: fixed;
+}
+.exterior_scroll_background1 {
+  background-image: url("/src/assets/Exterior9.jpg");
+  background-attachment: fixed, local;
+  background-size: 140vh;
+  background-position: 90vh;
+}

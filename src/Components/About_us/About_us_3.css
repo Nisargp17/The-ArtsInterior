@@ -1,0 +1,60 @@
+.About_us_3_bg {
+  background-image: url("/src/assets/bg1-aboutus.jpg");
+}
+.philosophy_1 {
+  background-image: url("/src/assets/support1.jpg");
+  background-size: cover;
+}
+.philosophy_2 {
+  background-image: url("/src/assets/support2.jpg");
+  background-size: cover;
+}
+.philosophy_3 {
+  background-image: url("/src/assets/support3.jpg");
+  background-size: cover;
+}
+.philosophy_1_container:hover {
+  .philosophy_1 {
+    transition: all 0.3s linear;
+    transform: rotateY(180deg);
+    background-image: url("/src/assets/bgoverlay-support.jpg");
+  }
+  .philosophy_1_text1 {
+    visibility: hidden;
+  }
+  .philosophy_1_text2 {
+    transition: all 0.3s linear;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+}
+.philosophy_2_container:hover {
+  .philosophy_2 {
+    transition: all 0.3s linear;
+    transform: rotateY(180deg);
+    background-image: url("/src/assets/bgoverlay-support.jpg");
+  }
+  .philosophy_2_text1 {
+    visibility: hidden;
+  }
+  .philosophy_2_text2 {
+    transition: all 0.3s linear;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+}
+.philosophy_3_container:hover {
+  .philosophy_3 {
+    transition: all 0.3s linear;
+    transform: rotateY(180deg);
+    background-image: url("/src/assets/bgoverlay-support.jpg");
+  }
+  .philosophy_3_text1 {
+    visibility: hidden;
+  }
+  .philosophy_3_text2 {
+    transition: all 0.3s linear;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+}
