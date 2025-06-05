@@ -1,5 +1,6 @@
 {
-  "name": "-y",
+  "$schema": "https://json.schemastore.org/package",
+  "name": "the-arts-interior",
   "private": true,
    "homepage": "https://Nisargp17.github.io/The-ArtsInterior",
   "version": "0.0.0",
@@ -10,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
 
   },
   "dependencies": {
