@@ -21,7 +21,7 @@ function Contact_us() {
     e.preventDefault();
     setStatus("Sending...");
     try {
-      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/send`, formData);
+      await axios.post("http://localhost:5000/send", formData);
 
       setStatus("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });

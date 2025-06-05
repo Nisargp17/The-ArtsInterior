@@ -2,9 +2,10 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+require("dotenv").config(); // ✅ must be here
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
@@ -17,8 +18,6 @@ app.post("/send", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    require("dotenv").config();
-
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -29,8 +28,8 @@ app.post("/send", async (req, res) => {
 
     // 1. Email to yourself
     await transporter.sendMail({
-      from: "your-email@gmail.com",
-      to: "your-email@gmail.com",
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: `New message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       replyTo: email,
@@ -38,7 +37,7 @@ app.post("/send", async (req, res) => {
 
     // 2. Thank-you email to user
     await transporter.sendMail({
-      from: "your-email@gmail.com",
+      from: process.env.EMAIL_USER,
       to: email,
       subject: "Thank you for contacting The Arts Interior",
       text: `Hi ${name},\n\nThank you for contacting The Arts Interior. Your request will be reviewed soon by our team.\n\nBest regards,\nThe Arts Interior Team`,
@@ -46,7 +45,7 @@ app.post("/send", async (req, res) => {
 
     res.status(200).send({ success: true, message: "Emails sent!" });
   } catch (err) {
-    console.error("Email send failed:", err); // 👈 log full error
+    console.error("Email send failed:", err);
     res.status(500).send({ success: false, message: "Failed to send emails." });
   }
 });
