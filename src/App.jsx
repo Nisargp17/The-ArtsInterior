@@ -1,73 +1,10 @@
-// import "./App.css";
+import "./App.css";
+// OLD: BrowserRouter (not ideal for GitHub Pages)
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// import NavBar from "./Components/NavBar";
-// import Footer from "./Components/Footer";
+// NEW: HashRouter (works with GitHub Pages)
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
-// import Home_page from "./Components/Home_page";
-// import About_us from "./Components/About_us";
-// import Interior_page from "./Components/Interior";
-// import Studio from "./Components/Studio";
-// import Architecture from "./Components/Architecture";
-// import Exterior from "./Components/Exterior";
-// import Contact_us from "./Components/Contact_us";
-// import Blog from "./Components/Blog";
-// import Portfolio from "./Components/Portfolio";
-
-// import Design_planning from "./Components/Services/Design_Planning";
-// import Exterior_design from "./Components/Services/Exterior_design";
-// import Furniture_decor from "./Components/Services/Furniture_decor";
-// import Create_concept from "./Components/Services/Create_concept";
-
-// const NotFound = () => (
-//   <h2 style={{ textAlign: "center" }}>404 - Page Not Found</h2>
-// );
-
-// function App() {
-//   return (
-//     <>
-//       <Router>
-//         <NavBar />
-
-//         <Routes>
-//           <Route path="/" element={<Home_page />} />
-//           <Route path="/about" element={<About_us />} />
-//           <Route path="/interior" element={<Interior_page />} />
-//           <Route path="/studio" element={<Studio />} />
-//           <Route path="/architecture" element={<Architecture />} />
-//           <Route path="/exterior" element={<Exterior />} />
-//           <Route path="/contact" element={<Contact_us />} />
-//           <Route path="/blog" element={<Blog />} />
-//           <Route path="/portfolio" element={<Portfolio />} />
-
-//           <Route
-//             path="/services/design-planning"
-//             element={<Design_planning />}
-//           />
-//           <Route
-//             path="/services/exterior-design"
-//             element={<Exterior_design />}
-//           />
-//           <Route
-//             path="/services/furniture-decor"
-//             element={<Furniture_decor />}
-//           />
-//           <Route path="/services/create-concept" element={<Create_concept />} />
-
-//           {/* 404 Fallback */}
-//           <Route path="*" element={<NotFound />} />
-//         </Routes>
-
-//         <Footer />
-//       </Router>
-//     </>
-//   );
-// }
-
-// export default App;
-
-import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
 import AnimatedRouteWrapper from "./Components/AnimatedRouteWrapper";
 import PageTransitionLoader from "./Components/PageTransitionLoader";
