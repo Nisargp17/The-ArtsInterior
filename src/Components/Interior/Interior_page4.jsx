@@ -2,7 +2,7 @@ import "./Interior_page4.css";
 function Interior_page4() {
   return (
     <>
-      <div className="bg-[url(src/assets/bg1-home2.jpg)] h-[130vh] flex flex-col justify-center items-center gap-[1vh]">
+      <div className="bg-[url(/src/assets/bg1-home2.jpg)] h-[130vh] flex flex-col justify-center items-center gap-[1vh]">
         <div className="text-[#a3a2a2] text-[20px] font-[500]">
           [ Our Portfolio ]
         </div>
