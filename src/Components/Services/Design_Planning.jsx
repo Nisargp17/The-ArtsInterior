@@ -1,7 +1,19 @@
+import pheaderServiceDetail from "/src/assets/pheader-service-detail1.jpg";
+import serviceSlider1 from "/src/assets/service-silder1.jpg";
+import serviceSlider2 from "/src/assets/service-silder2.jpg";
+import interiorDesign from "/src/assets/interior_design.jpg";
+import smallHomeDesign from "/src/assets/11smallhomeinteriordesignideas3123644.jpg";
+import interiorDesign2 from "/src/assets/interior-design2.jpg";
+import luxuryLivingRoom from "/src/assets/Luxury-Interior-Design-Living-Room-1080x675.webp";
+import smallHomeInterior from "/src/assets/11-small-home-interior-design-ideas-11.webp";
+
 function Design_planning() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-[50vh] bg-[url(/src/assets/pheader-service-detail1.jpg)]">
+      <div
+        className="flex flex-col justify-center items-center h-[50vh]"
+        style={{ backgroundImage: `url(${pheaderServiceDetail})` }}
+      >
         <div className="text-[4.5rem] text-[white] font-[300]">
           Design & Planning
         </div>
@@ -39,10 +51,10 @@ function Design_planning() {
           </div>
           <div className="flex justify-center items-center gap-[3vh] py-[4vh]">
             <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder1.jpg" alt="" />
+              <img src={serviceSlider1} alt="Service Slider 1" />
             </div>
             <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder2.jpg" alt="" />
+              <img src={serviceSlider2} alt="Service Slider 2" />
             </div>
           </div>
           <div className="text-[20px] text-[#acacac] py-[1vh]">
@@ -68,32 +80,32 @@ function Design_planning() {
             <div className="flex gap-[2vh]">
               <img
                 className="h-[35vh]"
-                src="/src/assets/interior_design.jpg"
-                alt=""
+                src={interiorDesign}
+                alt="Interior Design"
               />
               <img
                 className="h-[35vh]"
-                src="/src/assets/11smallhomeinteriordesignideas3123644.jpgv=1711455681"
-                alt=""
+                src={smallHomeDesign}
+                alt="Small Home Interior Design"
               />
             </div>
             <div className="flex gap-[2vh]">
               <img
                 className="h-[47.5vh]"
-                src="/src/assets/interior-design2.jpg"
-                alt=""
+                src={interiorDesign2}
+                alt="Interior Design 2"
               />
             </div>
             <div className="flex gap-[2vh]">
               <img
                 className="h-[38.2vh]"
-                src="/src/assets/Luxury-Interior-Design-Living-Room-1080x675.webp"
-                alt=""
+                src={luxuryLivingRoom}
+                alt="Luxury Interior Design Living Room"
               />
               <img
                 className="h-[38.2vh]"
-                src="/src/assets/11-small-home-interior-design-ideas-11.webp"
-                alt=""
+                src={smallHomeInterior}
+                alt="Small Home Interior"
               />
             </div>
           </div>
@@ -102,4 +114,5 @@ function Design_planning() {
     </>
   );
 }
+
 export default Design_planning;

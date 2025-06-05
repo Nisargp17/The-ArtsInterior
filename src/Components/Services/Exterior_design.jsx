@@ -1,24 +1,40 @@
+import pheaderServiceDetail2 from "/src/assets/pheader-service-detail2.jpg";
+import serviceSlider3 from "/src/assets/service-silder3.jpg";
+import serviceSlider4 from "/src/assets/service-silder4.jpg";
+import image1Service2 from "/src/assets/image1-service2.jpg";
+import exteriorDesign3 from "/src/assets/exterior-design3.jpg";
+import exteriorDesign148 from "/src/assets/EXTERIOR-DESIGN-148.jpg";
+import coolHomeExterior from "/src/assets/Exterior_home1.jpg";
+import exteriorDesign from "/src/assets/exterior-design.jpg";
+
 function Exterior_design() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-[50vh] bg-[url(/src/assets/pheader-service-detail2.jpg)]">
-        <div className="text-[4.5rem] text-[white] font-[300]">
+      <div
+        className="flex flex-col justify-center items-center h-[50vh]"
+        style={{
+          backgroundImage: `url(${pheaderServiceDetail2})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="text-[4.5rem] text-white font-[300]">
           Exterior Design
         </div>
       </div>
       <section className="flex justify-center gap-[30px] py-[10vh]">
         <div>
           <ol>
-            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-[white] hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700 ">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-white hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700">
               Design And Planning
             </li>
-            <li className=" h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[800] text-[20px] bg-[#1a1a1a] text-[white] my-[2vh] ">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[800] text-[20px] bg-[#1a1a1a] text-white my-[2vh]">
               Exterior Design
             </li>
-            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-[white] hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700 ">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-white hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700">
               Furniture and Decor
             </li>
-            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-[white] hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700 ">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-white hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700">
               Creating Concept
             </li>
           </ol>
@@ -38,11 +54,19 @@ function Exterior_design() {
             then the money will not be spent in a vain.
           </div>
           <div className="flex justify-center items-center gap-[3vh] py-[4vh]">
-            <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder3.jpg" alt="" />
+            <div className="h-[45vh] w-[25vw]">
+              <img
+                src={serviceSlider3}
+                alt="Service Slider 3"
+                className="h-full w-full object-cover"
+              />
             </div>
-            <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder4.jpg" alt="" />
+            <div className="h-[45vh] w-[25vw]">
+              <img
+                src={serviceSlider4}
+                alt="Service Slider 4"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
           <div className="text-[20px] text-[#acacac] py-[1vh]">
@@ -67,33 +91,33 @@ function Exterior_design() {
           <div className="flex flex-col justify-center items-center gap-[3vh] py-[4vh]">
             <div className="flex gap-[2vh]">
               <img
-                className="h-[38.5vh]"
-                src="/src/assets/image1-service2.jpg"
-                alt=""
+                className="h-[38.5vh] object-cover"
+                src={image1Service2}
+                alt="Interior design example 1"
               />
               <img
-                className="h-[38.5vh]"
-                src="/src/assets/exterior-design3.jpg"
-                alt=""
-              />
-            </div>
-            <div className="flex gap-[2vh]">
-              <img
-                className="h-[50vh]"
-                src="/src/assets/EXTERIOR-DESIGN-148.jpg"
-                alt=""
+                className="h-[38.5vh] object-cover"
+                src={exteriorDesign3}
+                alt="Exterior design example 2"
               />
             </div>
             <div className="flex gap-[2vh]">
               <img
-                className="h-[38.2vh]"
-                src="/src/assets/Cool-home-exterior-designs-in-2023-01.png"
-                alt=""
+                className="h-[50vh] object-cover"
+                src={exteriorDesign148}
+                alt="Exterior design example 3"
+              />
+            </div>
+            <div className="flex gap-[2vh]">
+              <img
+                className="h-[38.2vh] object-cover"
+                src={coolHomeExterior}
+                alt="Cool home exterior design"
               />
               <img
-                className="h-[38.2vh]"
-                src="/src/assets/exterior-design.jpg"
-                alt=""
+                className="h-[38.2vh] object-cover"
+                src={exteriorDesign}
+                alt="Exterior design example 4"
               />
             </div>
           </div>
@@ -102,4 +126,5 @@ function Exterior_design() {
     </>
   );
 }
+
 export default Exterior_design;

@@ -1,24 +1,40 @@
+import pheaderServiceDetail4 from "/src/assets/pheader-service-detail4.jpg";
+import serviceSlider7 from "/src/assets/service-silder7.jpg";
+import serviceSlider8 from "/src/assets/service-silder8.jpg";
+import furniture1 from "/src/assets/furniture1.webp";
+import furniture3 from "/src/assets/furniture3.jpg";
+import interiorDesign2 from "/src/assets/interior-design2.jpg";
+import furniture4 from "/src/assets/furniture4.jpg";
+import furniture5 from "/src/assets/furniture5.webp";
+
 function Furniture_decor() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-[50vh] bg-[url(/src/assets/pheader-service-detail4.jpg)]">
-        <div className="text-[4.5rem] text-[white] font-[300]">
+      <div
+        className="flex flex-col justify-center items-center h-[50vh]"
+        style={{
+          backgroundImage: `url(${pheaderServiceDetail4})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="text-[4.5rem] text-white font-[300]">
           Furniture & Decor
         </div>
       </div>
       <section className="flex justify-center gap-[30px] py-[10vh]">
         <div>
           <ol>
-            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-[white] hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-white hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700">
               Design And Planning
             </li>
-            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-[white] hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700 ">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-white hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700">
               Exterior Design
             </li>
-            <li className=" h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[800] text-[20px] bg-[#1a1a1a] text-[white] my-[2vh]">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[800] text-[20px] bg-[#1a1a1a] text-white my-[2vh]">
               Furniture and Decor
             </li>
-            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-[white] hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700 ">
+            <li className="h-[5vh] w-[15vw] pl-[25px] flex justify-start items-center font-[700] text-[2vh] bg-[#f4f4f4] text-[#343434] my-[2vh] hover:text-white hover:cursor-pointer hover:bg-[#1a1a1a] transition-all duration-700">
               Creating Concept
             </li>
           </ol>
@@ -38,11 +54,19 @@ function Furniture_decor() {
             then the money will not be spent in a vain.
           </div>
           <div className="flex justify-center items-center gap-[3vh] py-[4vh]">
-            <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder7.jpg" alt="" />
+            <div className="h-[45vh] w-[25vw]">
+              <img
+                src={serviceSlider7}
+                alt="Service slider 7"
+                className="h-full w-full object-cover"
+              />
             </div>
-            <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder8.jpg" alt="" />
+            <div className="h-[45vh] w-[25vw]">
+              <img
+                src={serviceSlider8}
+                alt="Service slider 8"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
           <div className="text-[20px] text-[#acacac] py-[1vh]">
@@ -67,33 +91,33 @@ function Furniture_decor() {
           <div className="flex flex-col justify-center items-center gap-[3vh] py-[4vh]">
             <div className="flex gap-[2vh]">
               <img
-                className="h-[35vh]"
-                src="/src/assets/furniture1.webp"
-                alt=""
+                className="h-[35vh] object-cover"
+                src={furniture1}
+                alt="Furniture 1"
               />
               <img
-                className="h-[35vh]"
-                src="/src/assets/furniture3.jpg"
-                alt=""
-              />
-            </div>
-            <div className="flex gap-[2vh]">
-              <img
-                className="h-[47.5vh]"
-                src="/src/assets/interior-design2.jpg"
-                alt=""
+                className="h-[35vh] object-cover"
+                src={furniture3}
+                alt="Furniture 3"
               />
             </div>
             <div className="flex gap-[2vh]">
               <img
-                className="h-[35vh]"
-                src="/src/assets/furniture4.jpg"
-                alt=""
+                className="h-[47.5vh] object-cover"
+                src={interiorDesign2}
+                alt="Interior design 2"
+              />
+            </div>
+            <div className="flex gap-[2vh]">
+              <img
+                className="h-[35vh] object-cover"
+                src={furniture4}
+                alt="Furniture 4"
               />
               <img
-                className="h-[35vh]"
-                src="/src/assets/furniture5.webp"
-                alt=""
+                className="h-[35vh] object-cover"
+                src={furniture5}
+                alt="Furniture 5"
               />
             </div>
           </div>
@@ -102,4 +126,5 @@ function Furniture_decor() {
     </>
   );
 }
+
 export default Furniture_decor;

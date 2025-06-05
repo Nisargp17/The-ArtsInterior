@@ -1,83 +1,93 @@
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
+// Import images
+import Exterior1 from "/src/assets/Exterior1.jpg";
+import Exterior2 from "/src/assets/Exterior2.jpg";
+import Exterior3 from "/src/assets/Exterior3.jpg";
+import Exterior4 from "/src/assets/Exterior4.jpg";
+import Exterior5 from "/src/assets/Exterior5.jpg";
+import Exterior6 from "/src/assets/Exterior6.jpg";
+import Exterior7 from "/src/assets/Exterior7.jpg";
+import Exterior10 from "/src/assets/Exterior10.jpg";
+import Exterior11 from "/src/assets/Exterior11.jpg";
+import Exterior12 from "/src/assets/Exterior12.jpg";
+import Exterior13 from "/src/assets/Exterior13.jpg";
+import Exterior14 from "/src/assets/Exterior14.jpg";
+import Exterior15 from "/src/assets/Exterior15.jpg";
+
 function Exterior_page6() {
   const data = [
     {
       id: 1,
-      src: "/src/assets/Exterior1.jpg",
+      src: Exterior1,
       Title: "Poolscape Villa",
       type: "Civic & Cultural",
     },
     {
       id: 2,
-      src: "/src/assets/Exterior2.jpg",
+      src: Exterior2,
       Title: "European Lard Station",
       type: "Civic & Cultural, Residential & Villas",
     },
     {
       id: 3,
-      src: "/src/assets/Exterior3.jpg",
+      src: Exterior3,
       Title: "Yabroudi Villa",
       type: "Residential & Villas",
     },
     {
       id: 4,
-      src: "/src/assets/Exterior4.jpg",
+      src: Exterior4,
       Title: "Cultural Complex Centre",
       type: "Civic & Cultural, Residential & Villas",
     },
     {
       id: 5,
-      src: "/src/assets/Exterior5.jpg",
+      src: Exterior5,
       Title: "Dalbourne Villa",
       type: "Residential & Villas",
     },
     {
       id: 6,
-      src: "/src/assets/Exterior6.jpg",
+      src: Exterior6,
       Title: "Amman Rotana Hotel",
       type: "CIVIC & CULTURAL",
     },
     {
       id: 7,
-      src: "/src/assets/Exterior7.jpg",
+      src: Exterior7,
       Title: "Hilltop Villa",
       type: "Residential & Villas",
     },
     {
       id: 8,
-      src: "/src/assets/Exterior10.jpg",
+      src: Exterior10,
       Title: "Lakeside Villa",
       type: "Residential & Villas",
     },
-    {
-      id: 9,
-      src: "/src/assets/Exterior11.jpg",
-      Title: "Hower Cafe",
-      type: "CIVIC & CULTURAL",
-    },
+    { id: 9, src: Exterior11, Title: "Hower Cafe", type: "CIVIC & CULTURAL" },
     {
       id: 10,
-      src: "/src/assets/Exterior12.jpg",
+      src: Exterior12,
       Title: "Evo Grand Hall",
       type: "CIVIC & CULTURAL",
     },
     {
       id: 11,
-      src: "/src/assets/Exterior13.jpg",
+      src: Exterior13,
       Title: "Lard Station",
       type: "CIVIC & CULTURAL",
     },
     {
       id: 12,
-      src: "/src/assets/Exterior14.jpg",
+      src: Exterior14,
       Title: "Simplestic Villa",
       type: "Residential & Villas",
     },
     {
       id: 13,
-      src: "/src/assets/Exterior15.jpg",
+      src: Exterior15,
       Title: "Sidepool Villa",
       type: "Residential & Villas",
     },
@@ -93,15 +103,13 @@ function Exterior_page6() {
   const getIndex = (offset) => (current + offset + data.length) % data.length;
 
   const handleClick = (dir) => {
-    if (dir === "right") {
-      setPrev(current);
-      setCurrent((prev) => (prev + 1) % data.length);
-      setDirection("right");
-    } else if (dir === "left") {
-      setPrev(current);
-      setCurrent((prev) => (prev - 1 + data.length) % data.length);
-      setDirection("left");
-    }
+    setPrev(current);
+    setCurrent((prev) =>
+      dir === "right"
+        ? (prev + 1) % data.length
+        : (prev - 1 + data.length) % data.length
+    );
+    setDirection(dir);
   };
 
   useEffect(() => {
@@ -159,6 +167,7 @@ function Exterior_page6() {
       >
         <img
           src={data[current].src}
+          alt={data[current].Title}
           className="w-full h-full object-cover rounded-xl shadow-xl"
         />
         <div className="flex flex-col justify-center items-center py-[2vh]">

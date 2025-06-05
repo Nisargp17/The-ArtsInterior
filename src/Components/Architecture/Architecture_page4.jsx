@@ -1,7 +1,18 @@
+import React from "react";
+
+import bgIconbox1 from "/src/assets/bg-iconbox1.jpg";
+import bgIconbox2 from "/src/assets/bg-iconbox2.jpg";
+import bgIconbox3 from "/src/assets/bg-iconbox3.jpg";
+
+import iconbox1 from "/src/assets/iconbox1.2.png";
+import iconbox2 from "/src/assets/iconbox2.png";
+import iconbox3 from "/src/assets/iconbox3.png";
+import iconbox4 from "/src/assets/iconbox4.png";
+
 function Architecture_page4() {
   return (
     <>
-      <section className=" page_4 relative flex flex-col items-center overflow-hidden pt-[60px] h-[120vh] invert bg-white">
+      <section className="page_4 relative flex flex-col items-center overflow-hidden pt-[60px] h-[120vh] invert bg-white">
         <div className="font-[600] text-[14px] text-[#918c89] pb-[20px]">
           [ OUR SERVICES ]
         </div>
@@ -11,14 +22,14 @@ function Architecture_page4() {
         <div className="font-[600] pb-[30px]">..............</div>
         <div className="flex flex-col gap-[5vh]">
           <div className="what_we_offer flex gap-6">
-            <div className=" we_offers h-[40vh] w-[25vw]  flex flex-col items-center">
+            <div className="we_offers h-[40vh] w-[25vw] flex flex-col items-center">
               <img
                 className="h-[40vh] w-[25vw] -z-50"
-                src="/src/assets/bg-iconbox1.jpg"
+                src={bgIconbox1}
                 alt=""
               />
               <div className="relative top-[-35vh]">
-                <img src="/src/assets/iconbox1.2.png" alt="" />
+                <img src={iconbox1} alt="" />
               </div>
               <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
                 Design & Planning
@@ -30,14 +41,14 @@ function Architecture_page4() {
                 Read More
               </div>
             </div>
-            <div className=" we_offers h-[40vh] w-[25vw]  flex flex-col items-center">
+            <div className="we_offers h-[40vh] w-[25vw] flex flex-col items-center">
               <img
                 className="h-[40vh] w-[25vw] -z-40"
-                src="/src/assets/bg-iconbox2.jpg"
+                src={bgIconbox2}
                 alt=""
               />
               <div className="relative top-[-35vh]">
-                <img src="/src/assets/iconbox2.png" alt="" />
+                <img src={iconbox2} alt="" />
               </div>
               <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
                 Custom Solutions
@@ -51,14 +62,14 @@ function Architecture_page4() {
             </div>
           </div>
           <div className="what_we_offer flex gap-6">
-            <div className=" we_offers h-[40vh] w-[25vw] flex flex-col items-center">
+            <div className="we_offers h-[40vh] w-[25vw] flex flex-col items-center">
               <img
                 className="h-[40vh] w-[25vw] -z-50"
-                src="/src/assets/bg-iconbox3.jpg"
+                src={bgIconbox3}
                 alt=""
               />
               <div className="relative top-[-35vh]">
-                <img src="/src/assets/iconbox3.png" alt="" />
+                <img src={iconbox3} alt="" />
               </div>
               <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
                 Furniture & Decor
@@ -70,14 +81,14 @@ function Architecture_page4() {
                 READ MORE
               </div>
             </div>
-            <div className=" we_offers h-[40vh] w-[25vw] flex flex-col items-center">
+            <div className="we_offers h-[40vh] w-[25vw] flex flex-col items-center">
               <img
                 className="h-[40vh] w-[25vw] -z-50"
-                src="/src/assets/bg-iconbox3.jpg"
+                src={bgIconbox3}
                 alt=""
               />
               <div className="relative top-[-35vh]">
-                <img src="/src/assets/iconbox4.png" alt="" />
+                <img src={iconbox4} alt="" />
               </div>
               <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
                 Exterior Design
@@ -95,4 +106,5 @@ function Architecture_page4() {
     </>
   );
 }
+
 export default Architecture_page4;

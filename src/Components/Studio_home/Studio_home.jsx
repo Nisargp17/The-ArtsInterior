@@ -1,9 +1,16 @@
+import React from "react";
+import bgSlider from "/src/assets/bg-slider-home3-dark.png";
+import slider1 from "/src/assets/slider1-home3.jpg";
+
 function Studio_home() {
   return (
     <>
-      <section className="h-[100vh] bg-[url(/src/assets/bg-slider-home3-dark.png)] bg-[black] flex justify-center items-center gap-[5vh]">
+      <section
+        className="h-[100vh] bg-black flex justify-center items-center gap-[5vh]"
+        style={{ backgroundImage: `url(${bgSlider})` }}
+      >
         <div className="flex flex-col text-left justify-center items-start w-[30vw]">
-          <div className="text-[white] text-[4rem] w-[27vw] font-[400] py-[1vh]">
+          <div className="text-white text-[4rem] w-[27vw] font-[400] py-[1vh]">
             Simple. Authentic. Close to Nature
           </div>
           <div className="text-[22px] text-[#999999] py-[1vh]">
@@ -19,11 +26,7 @@ function Studio_home() {
           </div>
         </div>
         <div>
-          <img
-            className="w-[43.5vw]"
-            src="/src/assets/slider1-home3.jpg"
-            alt=""
-          />
+          <img className="w-[43.5vw]" src={slider1} alt="Slider" />
         </div>
         <div className="verticle_line_home relative h-[100vh] w-[1px] bg-[#918c89] left-[6.05vw]"></div>
         <div className="verticle_line_home relative h-[100vh] w-[1px] bg-[#918c89] right-[84.8vw]"></div>
@@ -31,4 +34,5 @@ function Studio_home() {
     </>
   );
 }
+
 export default Studio_home;

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import image2AboutUs from "/src/assets/image2-aboutus.png";
+
 function About_us_5() {
   const [expandedId, setExpandedId] = useState(1);
   const handleToggle = (id) => {
@@ -7,7 +9,7 @@ function About_us_5() {
   const data = [
     {
       id: 1,
-      question: "What is 3D desing and how it work?",
+      question: "What is 3D design and how it work?",
       answer:
         "The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by lightning-fast development of projects employing unique styles.",
     },
@@ -42,11 +44,11 @@ function About_us_5() {
           {data.map((item) => (
             <div key={item.id} className="box border-b-[1px] pb-[10px]">
               <div
-                className="question flex justify-between text-[22px] pt-[20px]"
+                className="question flex justify-between text-[22px] pt-[20px] cursor-pointer"
                 onClick={() => handleToggle(item.id)}
               >
                 {item.question}
-                <div>+</div>
+                <div>{expandedId === item.id ? "−" : "+"}</div>
               </div>
               <div
                 className={`answer ${expandedId === item.id ? "expanded" : ""}`}
@@ -54,7 +56,8 @@ function About_us_5() {
                   height: expandedId === item.id ? "auto" : "0px",
                   overflow: "hidden",
                   color: "#8e8e8e",
-                  paddingTop: "10px",
+                  paddingTop: expandedId === item.id ? "10px" : "0",
+                  transition: "height 0.3s ease",
                 }}
               >
                 {item.answer}
@@ -63,10 +66,11 @@ function About_us_5() {
           ))}
         </div>
         <div className="w-[40vw]">
-          <img src="/src/assets/image2-aboutus.png" alt="" />
+          <img src={image2AboutUs} alt="About Us" />
         </div>
       </div>
     </>
   );
 }
+
 export default About_us_5;

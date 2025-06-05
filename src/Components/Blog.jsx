@@ -1,13 +1,26 @@
+import post8 from "/src/assets/post8.jpg";
+import post9 from "/src/assets/post9.jpg";
+import post1 from "/src/assets/post1.jpg";
+import exteriorDesign148 from "/src/assets/EXTERIOR-DESIGN-148.jpg";
+import headerImage from "/src/assets/pheader-service-detail1.jpg";
+
 function Blog() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-[50vh] bg-[url(/src/assets/pheader-service-detail1.jpg)]">
+      <div
+        className="flex flex-col justify-center items-center h-[50vh]"
+        style={{
+          backgroundImage: `url(${headerImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="text-[4.5rem] text-[white] font-[300]">BLOG</div>
       </div>
       <sectiont className="flex flex-col justify-center items-center gap-[2vw] py-[40px]">
         <div className="blog_articles h-[75vh] w-[42vw] border-[1px] border-[#e0e0e0] p-[20px] ">
           <div>
-            <img src="/src/assets/post8.jpg" alt="" />
+            <img src={post8} alt="" />
           </div>
           <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
             MARCH 20 , 2020
@@ -24,7 +37,7 @@ function Blog() {
         </div>
         <div className="blog_articles h-[75vh] w-[42vw] border-[1px] bg-white border-[#e0e0e0] p-[20px] ">
           <div>
-            <img src="/src/assets/post9.jpg" alt="" />
+            <img src={post9} alt="" />
           </div>
           <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
             MARCH 23 , 2020
@@ -41,7 +54,7 @@ function Blog() {
         </div>
         <div className="blog_articles h-[75vh] w-[42vw] border-[1px] border-[#e0e0e0] p-[20px] ">
           <div>
-            <img src="/src/assets/post1.jpg" alt="" />
+            <img src={post1} alt="" />
           </div>
           <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
             MARCH 10 , 2020
@@ -58,7 +71,7 @@ function Blog() {
         </div>
         <div className="blog_articles h-[70vh] w-[42vw] border-[1px] border-[#e0e0e0] p-[20px] ">
           <div>
-            <img src="/src/assets/EXTERIOR-DESIGN-148.jpg" alt="" />
+            <img src={exteriorDesign148} alt="" />
           </div>
           <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
             MARCH 12 , 2020
@@ -77,4 +90,5 @@ function Blog() {
     </>
   );
 }
+
 export default Blog;

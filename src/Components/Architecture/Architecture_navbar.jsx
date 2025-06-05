@@ -4,7 +4,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { NavLink } from "react-router-dom";
 
+import searchIcon from "/src/assets/search.svg";
+
 gsap.registerPlugin(ScrollTrigger);
+
 function Interior_navbar() {
   const navbarRef = useRef(null);
   const [showPages, setShowPages] = useState(false);
@@ -53,12 +56,10 @@ function Interior_navbar() {
         ref={navbarRef}
         className="absolute NavBar_header z-50 flex justify-around items-center bg-black"
       >
-        {/* Logo */}
         <div className="logo">
           <div className="w-[3rem]">THE ART INTERIORS</div>
         </div>
 
-        {/* Navigation Items */}
         <div className="nav_titles flex gap-15">
           <h1 className="header_item h-[9vh] flex items-center justify-center">
             <NavLink to="/" exact="true">
@@ -66,7 +67,6 @@ function Interior_navbar() {
             </NavLink>
           </h1>
 
-          {/* Pages Dropdown */}
           <div
             className="hidden_header_list2 h-[9vh] flex items-center justify-center relative"
             onMouseEnter={() => setShowPages(true)}
@@ -94,7 +94,6 @@ function Interior_navbar() {
             )}
           </div>
 
-          {/* Services Dropdown */}
           <div
             className="hidden_header_list3 h-[9vh] flex items-center justify-center relative"
             onMouseEnter={() => setShowServices(true)}
@@ -138,16 +137,15 @@ function Interior_navbar() {
           </h1>
         </div>
 
-        {/* Search */}
         <div className="search">
-          <img className="h-5" src="src/assets/search.svg" alt="Search" />
+          <img className="h-5" src={searchIcon} alt="Search" />
         </div>
 
-        {/* Decoration Lines */}
         <div className="nav_vertical_line absolute z-50 right-[5.5vw]"></div>
         <div className="nav_vertical_line absolute z-50 left-[5.5vw]"></div>
       </header>
     </>
   );
 }
+
 export default Interior_navbar;

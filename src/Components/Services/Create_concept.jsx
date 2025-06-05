@@ -1,7 +1,19 @@
+import serviceSlider9 from "/src/assets/service-silder9.jpg";
+import serviceSlider10 from "/src/assets/service-silder10.jpg";
+import image1Service5 from "/src/assets/image1-service5.jpg";
+import concept1 from "/src/assets/concept1.jpg";
+import concept2 from "/src/assets/concept2.jpg";
+import concept3 from "/src/assets/concept3.jpg";
+import concept4 from "/src/assets/concept4.jpg";
+import pheaderServiceDetail from "/src/assets/pheader-service-detail1.jpg";
+
 function Create_concept() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center h-[50vh] bg-[url(/src/assets/pheader-service-detail1.jpg)]">
+      <div
+        className="flex flex-col justify-center items-center h-[50vh]"
+        style={{ backgroundImage: `url(${pheaderServiceDetail})` }}
+      >
         <div className="text-[4.5rem] text-[white] font-[300]">
           Creating Concept
         </div>
@@ -39,10 +51,10 @@ function Create_concept() {
           </div>
           <div className="flex justify-center items-center gap-[3vh] py-[4vh]">
             <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder9.jpg" alt="" />
+              <img src={serviceSlider9} alt="Service Slider 9" />
             </div>
             <div className="h-[45vh] w-[25vw] ">
-              <img src="/src/assets/service-silder10.jpg" alt="" />
+              <img src={serviceSlider10} alt="Service Slider 10" />
             </div>
           </div>
           <div className="text-[20px] text-[#acacac] py-[1vh]">
@@ -68,29 +80,17 @@ function Create_concept() {
             <div className="flex gap-[2vh]">
               <img
                 className="h-[35vh]"
-                src="/src/assets/image1-service5.jpg"
-                alt=""
+                src={image1Service5}
+                alt="Image 1 Service 5"
               />
-              <img className="h-[35vh]" src="/src/assets/concept1.jpg" alt="" />
+              <img className="h-[35vh]" src={concept1} alt="Concept 1" />
             </div>
             <div className="flex gap-[2vh]">
-              <img
-                className="h-[47.5vh]"
-                src="/src/assets/concept2.jpg"
-                alt=""
-              />
+              <img className="h-[47.5vh]" src={concept2} alt="Concept 2" />
             </div>
             <div className="flex gap-[2vh]">
-              <img
-                className="h-[38.2vh]"
-                src="/src/assets/concept3.jpg"
-                alt=""
-              />
-              <img
-                className="h-[38.2vh]"
-                src="/src/assets/concept4.jpg"
-                alt=""
-              />
+              <img className="h-[38.2vh]" src={concept3} alt="Concept 3" />
+              <img className="h-[38.2vh]" src={concept4} alt="Concept 4" />
             </div>
           </div>
         </div>
@@ -98,4 +98,5 @@ function Create_concept() {
     </>
   );
 }
+
 export default Create_concept;
