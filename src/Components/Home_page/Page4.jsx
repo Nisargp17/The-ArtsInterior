@@ -1,8 +1,17 @@
 import "./Page4.css";
+
+import bgIcon1 from "/src/assets/bg-iconbox1.jpg";
+import bgIcon2 from "/src/assets/bg-iconbox2.jpg";
+import bgIcon3 from "/src/assets/bg-iconbox3.jpg";
+
+import icon1 from "/src/assets/iconbox1.2.png";
+import icon2 from "/src/assets/iconbox2.png";
+import icon3 from "/src/assets/iconbox3.png";
+
 function Page4() {
   return (
     <>
-      <section className=" page_4 relative flex flex-col items-center overflow-hidden pt-[60px] h-[91.1vh] ">
+      <section className="page_4 relative flex flex-col items-center overflow-hidden pt-[60px] h-[91.1vh]">
         <div className="font-[600] text-[14px] text-[#918c89] pb-[20px]">
           [ OUR SERVICES ]
         </div>
@@ -10,15 +19,16 @@ function Page4() {
           What Can We Offer
         </div>
         <div className="font-[600] pb-[30px]">..............</div>
+
         <div className="what_we_offer flex gap-6">
-          <div className=" we_offers h-[40vh] w-[25vw]  flex flex-col items-center">
+          <div className="we_offers h-[40vh] w-[25vw] flex flex-col items-center">
             <img
               className="h-[40vh] w-[25vw] -z-50"
-              src="src/assets/bg-iconbox1.jpg"
-              alt=""
+              src={bgIcon1}
+              alt="Design background"
             />
             <div className="relative top-[-35vh]">
-              <img src="src/assets/iconbox1.2.png" alt="" />
+              <img src={icon1} alt="Design icon" />
             </div>
             <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
               Design & Planning
@@ -30,14 +40,15 @@ function Page4() {
               Read More
             </div>
           </div>
-          <div className=" we_offers h-[40vh] w-[25vw]  flex flex-col items-center">
+
+          <div className="we_offers h-[40vh] w-[25vw] flex flex-col items-center">
             <img
               className="h-[40vh] w-[25vw] -z-40"
-              src="src/assets/bg-iconbox2.jpg"
-              alt=""
+              src={bgIcon2}
+              alt="Custom solutions background"
             />
             <div className="relative top-[-35vh]">
-              <img src="src/assets/iconbox2.png" alt="" />
+              <img src={icon2} alt="Custom solutions icon" />
             </div>
             <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
               Custom Solutions
@@ -49,14 +60,15 @@ function Page4() {
               READ MORE
             </div>
           </div>
-          <div className=" we_offers h-[40vh] w-[25vw] flex flex-col items-center">
+
+          <div className="we_offers h-[40vh] w-[25vw] flex flex-col items-center">
             <img
               className="h-[40vh] w-[25vw] -z-50"
-              src="src/assets/bg-iconbox3.jpg"
-              alt=""
+              src={bgIcon3}
+              alt="Furniture background"
             />
             <div className="relative top-[-35vh]">
-              <img src="src/assets/iconbox3.png" alt="" />
+              <img src={icon3} alt="Furniture icon" />
             </div>
             <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
               Furniture & Decor
@@ -69,6 +81,7 @@ function Page4() {
             </div>
           </div>
         </div>
+
         <div className="flex gap-[10vw] py-[10vh]">
           <div className="flex flex-col items-center">
             <div className="font-[300] text-[3rem] text-[#9f9e9e]">
@@ -89,6 +102,7 @@ function Page4() {
             <div className="font-[400] text-[1.3rem]">OFFICES WORLDWIDE</div>
           </div>
         </div>
+
         <div className="virticalLines relative top-[-100vh] -z-50"></div>
         <div className="virticalLines relative top-[-10000000vh] -z-50 left-[44.1vw]"></div>
         <div className="virticalLines relative -z-50 top-[-1000000000vw] right-[44.1vw]"></div>

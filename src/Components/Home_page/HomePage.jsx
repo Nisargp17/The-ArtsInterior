@@ -432,16 +432,22 @@ import "./HomePage.css";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-// Updated slide data with bgText for each slide
+
+// ✅ Image Imports
+import slider1 from "/src/assets/slider2-home1-1.jpg";
+import slider2 from "/src/assets/slider3-home1.jpg";
+import arrowLeft from "/src/assets/arl.svg";
+import arrowRight from "/src/assets/arr.svg";
+// ✅ Slide data using imports
 const slide = [
   {
-    src: "src/assets/slider2-home1-1.jpg",
+    src: slider1,
     Title: "High-end Interior Design",
     text: "We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
     bgText: "QUALITY",
   },
   {
-    src: "src/assets/slider3-home1.jpg",
+    src: slider2,
     Title: "Best Furniture and Decor",
     text: "We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
     bgText: "STUDIO",
@@ -514,12 +520,11 @@ function HomePage() {
       { opacity: 1, y: 0, duration: 1, delay: 0.8 }
     );
 
-    // Background Text: Typewriting animation + staggered letters
     gsap.fromTo(
       ".bg_text",
       {
         opacity: 0,
-        x: "100vw", // Starts from the right outside the viewport
+        x: "100vw",
       },
       {
         opacity: 1,
@@ -527,7 +532,7 @@ function HomePage() {
         duration: 1,
         delay: 0.5,
         stagger: 0.1,
-        ease: "power4.out", // Smooth easing
+        ease: "power4.out",
       }
     );
 
@@ -536,13 +541,14 @@ function HomePage() {
       { opacity: 0, y: "10vh" },
       { opacity: 1, y: 0, duration: 1.5, delay: 0.6, stagger: 0.2 }
     );
+
     gsap.fromTo(
       ".bg_text",
       {
         opacity: 0,
-        x: () => `${Math.random() * 200 - 100}vw`, // Random horizontal position
-        y: () => `${Math.random() * 100 - 50}vh`, // Random vertical position
-        rotation: () => Math.random() * 360, // Random rotation
+        x: () => `${Math.random() * 200 - 100}vw`,
+        y: () => `${Math.random() * 100 - 50}vh`,
+        rotation: () => Math.random() * 360,
       },
       {
         opacity: 1,
@@ -552,7 +558,7 @@ function HomePage() {
         duration: 1,
         delay: 0.5,
         stagger: 0.1,
-        ease: "power4.out", // Smooth easing
+        ease: "power4.out",
       }
     );
   }, [slideIndex]);
@@ -563,7 +569,6 @@ function HomePage() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Smooth fade transition between slides */}
       {prevSlide !== null && prevSlide !== slideIndex && (
         <img
           key={`prev-${prevSlide}`}
@@ -582,7 +587,6 @@ function HomePage() {
         alt=""
       />
 
-      {/* Background Text: Dynamically mapped letters with animation */}
       <div className="hero_bg_text flex gap-20">
         {slide[slideIndex].bgText.split("").map((char, i) => (
           <div key={i} className="bg_text relative inline-block top-[7vh]">
@@ -591,40 +595,39 @@ function HomePage() {
         ))}
       </div>
 
-      {/* Title / Text / Button */}
       <div
         ref={HeroTitleRef}
-        className="relative hero_title top-[-14.5vh] z-20 "
+        className="relative hero_title top-[-14.5vh] z-20"
       >
         {slide[slideIndex].Title}
       </div>
+
       <div
         ref={HeroTextRef}
         className="relative hero_text w-[45vw] text-center top-[-11vh]"
       >
         {slide[slideIndex].text}
       </div>
+
       <button ref={HeroButtonRef} className="relative button_main top-[-6vh]">
         <NavLink to="/portfolio">View Projects</NavLink>
       </button>
 
-      {/* Horizontal and Vertical Lines */}
       <div className="lines Horizontal_line relative bottom-[-15.5vh]"></div>
       <div className="lines Virtical_line z-50 absolute left-[5.5vw]"></div>
       <div className="lines Virtical_line z-50 absolute right-[5.5vw]"></div>
 
-      {/* Navigation Arrows */}
       <div className="lines arrows relative flex gap-12 bottom-[-18vh] right-[-44.4vw]">
         <img
           onClick={ShowPrevImg}
           className="h-12 cursor-pointer"
-          src="/src/assets/arl.svg"
+          src={arrowLeft}
           alt="Previous"
         />
         <img
           onClick={ShowNextImg}
           className="h-12 cursor-pointer"
-          src="/src/assets/arr.svg"
+          src={arrowRight}
           alt="Next"
         />
       </div>

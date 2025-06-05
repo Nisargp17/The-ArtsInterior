@@ -1,13 +1,18 @@
 import "./Page2.css";
 import { NavLink } from "react-router-dom";
+
+import image2 from "/src/assets/image2-home1.png";
+
 function Page2() {
   return (
     <>
       <div className="relative About_company flex justify-center gap-[9vw] h-[60vh] items-center overflow-hidden">
         <div className="image_page2 w-[35vw]">
-          <img src="src/assets/image2-home1.png" alt="" />
+          <img src={image2} alt="Interior sketch" />
         </div>
+
         <div className="Virtical_line1 -z-50 left-[49.6vw] absolute"></div>
+
         <div className="About_text w-[34vw]">
           <div className="pb-[3vh] text-[#a3a2a2]">[ ABOUT COMPANY ]</div>
           <div className="font-medium text-5xl">From Sketch to Life</div>
@@ -27,6 +32,7 @@ function Page2() {
             <div className="button_lines2 relative"></div>
           </div>
         </div>
+
         <div className="Virtical_line1 -z-50 absolute left-[5.5vw]"></div>
         <div className="Virtical_line1 -z-50 absolute right-[5.5vw]"></div>
       </div>

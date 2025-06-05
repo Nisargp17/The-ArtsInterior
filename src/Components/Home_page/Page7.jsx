@@ -1,4 +1,7 @@
 import "./Page7.css";
+
+import image3 from "/src/assets/image3-home1.png";
+
 function Page7() {
   return (
     <>
@@ -15,6 +18,7 @@ function Page7() {
             We are constantly growing, learning, and improving and our partners
             are steadily increasing. 200 projects is a sizable number.
           </div>
+
           <div className="flex w-[20vw] border-b-[2.5px] justify-between pb-[0.5vw] my-[1vw]">
             <div className="font-[700] text-[1rem]">INTERIOR SKETCH</div>
             <div className="font-[700] text-[1rem]">65%</div>
@@ -28,13 +32,11 @@ function Page7() {
             <div className="font-[700] text-[1rem]">55%</div>
           </div>
         </div>
+
         <div className="w-[44vw]">
-          <img
-            className="relative left-[7vw]"
-            src="src/assets/image3-home1.png"
-            alt=""
-          />
+          <img className="relative left-[7vw]" src={image3} alt="Our Skills" />
         </div>
+
         <div className="Page7_vertical_line relative -z-50 left-[4.65vw] "></div>
         <div className="Page7_vertical_line relative -z-50 left-[-83.6vw]"></div>
         <div className="Page7_vertical_line relative -z-50 left-[-39.55vw]"></div>
@@ -42,4 +44,5 @@ function Page7() {
     </>
   );
 }
+
 export default Page7;

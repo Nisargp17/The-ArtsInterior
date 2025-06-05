@@ -1,5 +1,10 @@
 import "./Page9.css";
 import { NavLink } from "react-router-dom";
+
+import post1 from "/src/assets/post1.jpg";
+import post8 from "/src/assets/post8.jpg";
+import post9 from "/src/assets/post9.jpg";
+
 function Page9() {
   return (
     <>
@@ -16,10 +21,11 @@ function Page9() {
             <NavLink to="/blog">VIEW ALL</NavLink>
           </button>
         </div>
+
         <div className="flex justify-center items-center gap-[2vw] py-[40px]">
           <div className="blog_articles h-[43vh] w-[21vw] border-[1px] border-[#e0e0e0] p-[20px] ">
             <div>
-              <img src="src/assets/post8.jpg" alt="" />
+              <img src={post8} alt="Kitchen Design Tips" />
             </div>
             <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
               MARCH 20 , 2020
@@ -31,9 +37,10 @@ function Page9() {
               A Faceting effects livs up....
             </div>
           </div>
+
           <div className="blog_articles h-[43vh] w-[21vw] border-[1px] bg-white border-[#e0e0e0] p-[20px] ">
             <div>
-              <img src="src/assets/post9.jpg" alt="" />
+              <img src={post9} alt="Golden Ratio 2D Sketch" />
             </div>
             <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
               MARCH 23 , 2020
@@ -45,9 +52,10 @@ function Page9() {
               A Faceting effects livs up....
             </div>
           </div>
+
           <div className="blog_articles h-[43vh] w-[21vw] border-[1px] border-[#e0e0e0] p-[20px] ">
             <div>
-              <img src="src/assets/post1.jpg" alt="" />
+              <img src={post1} alt="Pastel Colors" />
             </div>
             <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
               MARCH 10 , 2020
@@ -60,6 +68,7 @@ function Page9() {
             </div>
           </div>
         </div>
+
         <div className="page8_vertical_line relative -z-50 top-[-70vh] left-[5.5vw]"></div>
         <div className="page8_vertical_line relative -z-50 top-[-170vh] left-[93.65vw]"></div>
         <div className="page8_vertical_line relative -z-50 top-[-270vh] left-[49.6vw]"></div>
@@ -67,4 +76,5 @@ function Page9() {
     </>
   );
 }
+
 export default Page9;
