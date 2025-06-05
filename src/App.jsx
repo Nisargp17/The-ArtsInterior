@@ -7,7 +7,6 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import ScrollToTop from "./Components/ScrollToTop";
 import AnimatedRouteWrapper from "./Components/AnimatedRouteWrapper";
-import PageTransitionLoader from "./Components/PageTransitionLoader";
 
 import Home_page from "./Components/Home_page";
 import About_us from "./Components/About_us";
