@@ -5,7 +5,7 @@ function Page2() {
     <>
       <div className="relative About_company flex justify-center gap-[9vw] h-[60vh] items-center overflow-hidden">
         <div className="image_page2 w-[35vw]">
-          <img src="/src/assets/image2-home1.png" alt="" />
+          <img src="src/assets/image2-home1.png" alt="" />
         </div>
         <div className="Virtical_line1 -z-50 left-[49.6vw] absolute"></div>
         <div className="About_text w-[34vw]">

@@ -7,7 +7,7 @@ function Page5() {
           <div className="pro_img1 overflow-hidden">
             <img
               className="h-[50vh] z-[-50]"
-              src="/src/assets/project1.jpg"
+              src="src/assets/project1.jpg"
               alt=""
             />
             <div className="hidden_text bg-black z-50 relative opacity-0 h-[15vh] w-[20vw] gap-[1vw] flex flex-col justify-center p-[30px]">
@@ -22,7 +22,7 @@ function Page5() {
           <div className="pro_img2 overflow-hidden">
             <img
               className="h-[50vh] z-[-50]"
-              src="/src/assets/project2.jpg"
+              src="src/assets/project2.jpg"
               alt=""
             />
             <div className="hidden_text bg-black z-50 relative opacity-0 h-[15vh] w-[18vw] gap-[1vw] flex flex-col justify-center p-[30px]">
@@ -37,7 +37,7 @@ function Page5() {
           <div className="pro_img3 overflow-hidden">
             <img
               className="h-[50vh] z-[-50]"
-              src="/src/assets/project3.jpg"
+              src="src/assets/project3.jpg"
               alt=""
             />
             <div className="hidden_text bg-black z-50 relative opacity-0 h-[15vh] w-[18vw] gap-[1vw] flex flex-col justify-center p-[30px]">
@@ -54,7 +54,7 @@ function Page5() {
           <div className="pro_img4 overflow-hidden">
             <img
               className="h-[50vh] z-[-50]"
-              src="/src/assets/project4.jpg"
+              src="src/assets/project4.jpg"
               alt=""
             />
             <div className="hidden_text bg-black z-50 relative opacity-0 h-[15vh] w-[18vw] gap-[1vw] flex flex-col justify-center p-[30px]">
@@ -69,7 +69,7 @@ function Page5() {
           <div className="pro_img5 overflow-hidden">
             <img
               className="h-[50vh] z-[-50]"
-              src="/src/assets/project5.jpg"
+              src="src/assets/project5.jpg"
               alt=""
             />
             <div className="hidden_text bg-black z-50 relative opacity-0 h-[15vh] w-[18vw] gap-[1vw] flex flex-col justify-center p-[30px]">
@@ -84,7 +84,7 @@ function Page5() {
           <div className="pro_img6 overflow-hidden">
             <img
               className="h-[50vh] z-[-50]"
-              src="/src/assets/project6.jpg"
+              src="src/assets/project6.jpg"
               alt=""
             />
             <div className="hidden_text bg-black z-50 relative opacity-0 h-[15vh] w-[25vw] gap-[1vw] flex flex-col justify-center p-[30px]">

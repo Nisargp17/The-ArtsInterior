@@ -14,11 +14,11 @@ function Page4() {
           <div className=" we_offers h-[40vh] w-[25vw]  flex flex-col items-center">
             <img
               className="h-[40vh] w-[25vw] -z-50"
-              src="/src/assets/bg-iconbox1.jpg"
+              src="src/assets/bg-iconbox1.jpg"
               alt=""
             />
             <div className="relative top-[-35vh]">
-              <img src="/src/assets/iconbox1.2.png" alt="" />
+              <img src="src/assets/iconbox1.2.png" alt="" />
             </div>
             <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
               Design & Planning
@@ -33,11 +33,11 @@ function Page4() {
           <div className=" we_offers h-[40vh] w-[25vw]  flex flex-col items-center">
             <img
               className="h-[40vh] w-[25vw] -z-40"
-              src="/src/assets/bg-iconbox2.jpg"
+              src="src/assets/bg-iconbox2.jpg"
               alt=""
             />
             <div className="relative top-[-35vh]">
-              <img src="/src/assets/iconbox2.png" alt="" />
+              <img src="src/assets/iconbox2.png" alt="" />
             </div>
             <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
               Custom Solutions
@@ -52,11 +52,11 @@ function Page4() {
           <div className=" we_offers h-[40vh] w-[25vw] flex flex-col items-center">
             <img
               className="h-[40vh] w-[25vw] -z-50"
-              src="/src/assets/bg-iconbox3.jpg"
+              src="src/assets/bg-iconbox3.jpg"
               alt=""
             />
             <div className="relative top-[-35vh]">
-              <img src="/src/assets/iconbox3.png" alt="" />
+              <img src="src/assets/iconbox3.png" alt="" />
             </div>
             <div className="relative top-[-35vh] text-[2rem] py-[1vw]">
               Furniture & Decor

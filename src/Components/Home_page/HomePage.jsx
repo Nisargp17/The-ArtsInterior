@@ -435,13 +435,13 @@ import { NavLink } from "react-router-dom";
 // Updated slide data with bgText for each slide
 const slide = [
   {
-    src: "/src/assets/slider2-home1-1.jpg",
+    src: "src/assets/slider2-home1-1.jpg",
     Title: "High-end Interior Design",
     text: "We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
     bgText: "QUALITY",
   },
   {
-    src: "/src/assets/slider3-home1.jpg",
+    src: "src/assets/slider3-home1.jpg",
     Title: "Best Furniture and Decor",
     text: "We pride ourselves on being builders — creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
     bgText: "STUDIO",
@@ -618,13 +618,13 @@ function HomePage() {
         <img
           onClick={ShowPrevImg}
           className="h-12 cursor-pointer"
-          src="src/assets/arl.svg"
+          src="/src/assets/arl.svg"
           alt="Previous"
         />
         <img
           onClick={ShowNextImg}
           className="h-12 cursor-pointer"
-          src="src/assets/arr.svg"
+          src="/src/assets/arr.svg"
           alt="Next"
         />
       </div>

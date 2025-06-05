@@ -19,7 +19,7 @@ function Page9() {
         <div className="flex justify-center items-center gap-[2vw] py-[40px]">
           <div className="blog_articles h-[43vh] w-[21vw] border-[1px] border-[#e0e0e0] p-[20px] ">
             <div>
-              <img src="/src/assets/post8.jpg" alt="" />
+              <img src="src/assets/post8.jpg" alt="" />
             </div>
             <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
               MARCH 20 , 2020
@@ -33,7 +33,7 @@ function Page9() {
           </div>
           <div className="blog_articles h-[43vh] w-[21vw] border-[1px] bg-white border-[#e0e0e0] p-[20px] ">
             <div>
-              <img src="/src/assets/post9.jpg" alt="" />
+              <img src="src/assets/post9.jpg" alt="" />
             </div>
             <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
               MARCH 23 , 2020
@@ -47,7 +47,7 @@ function Page9() {
           </div>
           <div className="blog_articles h-[43vh] w-[21vw] border-[1px] border-[#e0e0e0] p-[20px] ">
             <div>
-              <img src="/src/assets/post1.jpg" alt="" />
+              <img src="src/assets/post1.jpg" alt="" />
             </div>
             <div className=" font-[600] text-[17px] text-[#a7a6a6] py-[10px]">
               MARCH 10 , 2020

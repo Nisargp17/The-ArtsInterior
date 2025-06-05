@@ -31,7 +31,7 @@ function Page7() {
         <div className="w-[44vw]">
           <img
             className="relative left-[7vw]"
-            src="/src/assets/image3-home1.png"
+            src="src/assets/image3-home1.png"
             alt=""
           />
         </div>
