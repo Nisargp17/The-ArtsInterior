@@ -52,3 +52,9 @@
     border: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .About_company {
+    height: 100vh;
+  }
+}
